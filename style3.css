@@ -1,0 +1,60 @@
+/* style3.css */
+
+body {
+    background: linear-gradient(135deg, #00bcd4, #ff4081);
+    font-family: Arial, sans-serif;
+    animation: gradientAnimation 10s ease infinite alternate;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Set height of container to full viewport height */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.options button {
+    flex: 1; /* Let buttons expand to fill available space */
+    font-size: 24px; /* Increase font size */
+    background-color: #ff9800;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 10px; /* Increase border-radius for rounded corners */
+    padding: 20px 40px; /* Increase padding for larger buttons */
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #ff5722;
+}
+
+.options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.options a:hover {
+    color: #f44336;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
